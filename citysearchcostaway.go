@@ -1,4 +1,4 @@
-// citysearchcostaway.go
+// citysearchbreadth.go
 // Author: Hannes du Plooy
 // Revision Date: 3 Sep 2016
 // Implements BestCostAwaySearch of hduplooy/gosearch to search for a road trip from one city to another
@@ -175,7 +175,7 @@ func searchRoute(fromcity, tocity string) {
 	destination = tocity
 	city := cities[fromcity]
 	// Call our search func
-	cnt, ans, hist := src.BestCostAwaySearch(&CitySE{city, strconv.Itoa(city.Key), 0}, true)
+	cnt, ans, hist := src.BestCostSearch(&CitySE{city, strconv.Itoa(city.Key), 0}, true)
 	fmt.Printf("Done in %d steps\n", cnt)
 	for i := len(hist) - 1; i >= 0; i-- {
 		fmt.Printf("%v\n", hist[i])
