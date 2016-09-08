@@ -1,4 +1,4 @@
-// citysearchcost.go
+// citysearchbreadth.go
 // Author: Hannes du Plooy
 // Revision Date: 3 Sep 2016
 // Implements BestCostSearch of hduplooy/gosearch to search for a road trip from one city to another
